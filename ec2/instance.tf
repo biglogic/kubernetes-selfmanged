@@ -8,7 +8,7 @@ resource "aws_instance" "instance" {
     subnet_id = var.subpubid
     root_block_device {
         volume_size = 30 # in GB <<----- I increased this!
-        volume_type = "gp3"
+        volume_type = "gp5"
   }
     vpc_security_group_ids = [ var.sg_id ]
     tags = {
