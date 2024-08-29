@@ -8,7 +8,7 @@ variable "aws_instance" {
       }))
       default = {
       "master-node" = {
-            instance_type = "t2.medium"
+            instance_type = "t3.medium"
       }  
       "worker-node-1" = {
             instance_type = "t2.medium"
